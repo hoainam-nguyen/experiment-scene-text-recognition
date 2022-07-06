@@ -293,9 +293,9 @@ if __name__ == '__main__':
     os.makedirs(f'./saved_models/{opt.exp_name}', exist_ok=True)
 
     """ vocab / character number configuration """
-    if opt.sensitive:
-        # opt.character += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-        opt.character = string.printable[:-6]  # same with ASTER setting (use 94 char).
+    # if opt.sensitive:
+    #     # opt.character += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    #     opt.character = string.printable[:-6]  # same with ASTER setting (use 94 char).
 
     """ Seed and GPU setting """
     # print("Random Seed: ", opt.manualSeed)
