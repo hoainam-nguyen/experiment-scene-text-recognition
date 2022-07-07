@@ -6,5 +6,5 @@ python3 train.py \
     --train_data /mlcv/WorkingSpace/SceneText/namnh/Research-STR-draft/data_lmdb_release/training \
     --select_data MJ-ST \
     --batch_ratio 0.5-0.5 \
-    --Transformation TPS --FeatureExtraction VGG --SequenceModeling BiLSTM --Prediction Attn
+    --Transformation TPS --FeatureExtraction ResNet --SequenceModeling BiLSTM --Prediction Attn
 

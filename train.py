@@ -172,7 +172,8 @@ def train(opt):
             # print(preds.view(-1, preds.shape[-1]), target.contiguous().view(-1))
             # exit()
             cost = criterion(preds.view(-1, preds.shape[-1]), target.contiguous().view(-1))
-
+        
+        print(f"[{iteration+1}/{opt.num_iter}] Train loss: {cost}")
         model.zero_grad()
         cost.backward()
         torch.nn.utils.clip_grad_norm_(model.parameters(), opt.grad_clip)  # gradient clipping with 5 (Default)
